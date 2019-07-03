@@ -28,51 +28,31 @@
         app:layout_constraintGuide_percent=".2" />
 
     <Button
-        android:id="@+id/leftParenthesisButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
-        android:background="@android:color/darker_gray"
-        android:text="("
-        app:layout_constraintBottom_toTopOf="@id/guideline1"
-        app:layout_constraintEnd_toStartOf="@id/rightParenthesisButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline0" />
-
-    <Button
-        android:id="@+id/rightParenthesisButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
-        android:background="@android:color/darker_gray"
-        android:text=")"
-        app:layout_constraintBottom_toTopOf="@id/guideline1"
-        app:layout_constraintEnd_toStartOf="@id/percentageButton"
-        app:layout_constraintStart_toEndOf="@id/leftParenthesisButton"
-        app:layout_constraintTop_toTopOf="@id/guideline0" />
-
-    <Button
         android:id="@+id/percentageButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         android:background="@android:color/darker_gray"
         android:text="%"
         app:layout_constraintBottom_toTopOf="@id/guideline1"
-        app:layout_constraintEnd_toStartOf="@id/clearButton"
-        app:layout_constraintStart_toEndOf="@id/rightParenthesisButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/divisionButton"
         app:layout_constraintTop_toTopOf="@id/guideline0" />
 
     <Button
         android:id="@+id/clearButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="5dp"
         android:background="@android:color/darker_gray"
         android:text="AC"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toTopOf="@id/guideline1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/percentageButton"
+        app:layout_constraintEnd_toEndOf="@id/nineButton"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline0" />
 
     <androidx.constraintlayout.widget.Guideline
